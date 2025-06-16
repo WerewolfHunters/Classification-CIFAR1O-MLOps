@@ -33,16 +33,27 @@ This project demonstrates a complete **MLOps workflow** where a CNN model is tra
 ## 🏗️ Project Structure
 
 Classification-CIFAR10-MLOps/
+
 ├── streamlit_app/
+
 │ ├── app.py # Streamlit UI
+
 │ ├── model/
+
 │ │ ├── cnn_model.py # CNN model architecture
+
 │ │ └── utils.py # Preprocessing and helper functions
+
 │ ├── saved_models/
+
 │ │ └── best_model.pth # Saved PyTorch model
+
 │ └── assets/ # Sample images (optional)
+
 ├── Dockerfile # Docker build configuration
+
 ├── requirements.txt # Python dependencies
+
 └── README.md # Project info (you’re reading it!)
 
 ---
