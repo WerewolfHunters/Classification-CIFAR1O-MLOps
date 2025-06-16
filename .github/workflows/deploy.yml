@@ -1,0 +1,19 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Deploy Streamlit App
+      run: echo "Let Render.com handle deployment after git push."
